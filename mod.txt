@@ -1,0 +1,14 @@
+{
+	"name" : "Localization Fixes",
+	"description" : "Fixes some localization errors in u37.1",
+	"author" : "s",
+	"contact" : "",
+	"version" : "1.2",
+	"blt_version" : 2,
+	"hooks" : [
+		{   
+			"hook_id" : "lib/managers/localizationmanager",
+			"script_path" : "localizationmanager.lua"
+		}
+	]
+}
