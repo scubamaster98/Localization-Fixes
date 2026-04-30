@@ -2,8 +2,8 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 	LocalizationManager:add_localized_strings({
 		menu_inspire_desc = "BASIC: ##$basic;##\nYou revive crew members ##50%## faster. Shouting at your teammates will increase their movement speed by ##20%## for ##10## seconds.\n\nACE: ##$pro;##\nThere is a ##75%## chance that you can revive crew members at a distance by shouting at them.", --adds . at the end
 		menu_chat_peer_kicked = "$name; has been kicked.",
-		menu_chat_peer_lost = "$name; lost connection.", --disconnected is too vague and similar to left imo
 		menu_asset_safe_escape = "Expert Driver",
+		hud_carry_weapon = "Weapons", --its multiple weapons
 		heist_safehouse_hl = "Safe House", --consistent spelling
 		heist_safehouse = "Safe House",
 		heist_haunted = "Safe House Nightmare",
@@ -34,8 +34,8 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		bm_wp_mp9_m_short = "Short Mag",
 		bm_wp_saiga_m_20rnd = "Extended Mag",
 		hud_int_equipment_barcode_downtown = "Barcode: Downtown", --i dont think washington is necessary
-		hud_int_open_slash_close = "Hold $BTN_INTERACT; to open/close", --not sure yet, only saw it in one heist and press is incorrect
-		pln_watchdogs_new_stage1_10_any_02 = "OK people, the pick-up driver is here! He's on the street behind you!", -- driver not drive
+		hud_int_open_slash_close = "Hold $BTN_INTERACT; to open/close", --not sure yet, only saw it in one heist
+		pln_watchdogs_new_stage1_10_any_02 = "OK people, the pick-up driver is here! He's on the street behind you!", --driver not drive
 		pln_watchdogs_new_stage2_01_any_01 = "Let's get the bags secured ASAP. There's a boat on the way to pick 'em up.",
 		dr1_a67_any_01 = " ", --watchdogs driver 1-4
 		dr1_a67_any_02 = " ",
@@ -50,19 +50,23 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_election_stage3_04_any_01 = "The data scrambler just crashed. Get to the server and get it running again.",
 		pln_framing_stage3_23_any_01 = "There you go. Now let's frame this guy, get up to the roof, and our guy will throw you the coke.",
 		pln_rats_stage1_26_any_02 = "Ah, what!? Guys, you have to be careful with that stuff, I told you!",
+		pln_fs1_03_any_01 = "This is the correct hangar, bag those guns and get ready to bring them back up to the van.",
+		plt_a06a_any_03 = "I'm there in 1 minute.", --mallcrasher bile line
 		pln_ko1_06_02 = "Gold bullion. Probably taken from the enemies of freedom.", --shadow raid
 		pln_hm1_27_01 = "Gang, there's gotta be something there that can pinpoint the Commissar's location. Keep looking.", --something there, not in the motelrooms
+		pln_hm1_50_02 = "Those stacked crates are due to be shipped out. Check the labels. Get the right one to the code reader, and that should lead us straight to the Commissar.",
 		pln_hm1_50_03 = "You see all those crates? They're about to get shipped out. Grab the labels and check them at the reader over there. That should give us the Commissar's precise location.",
 		pln_hm1_71_01 = "Remember: you're looking for a clue about Downtown Washington. A file, hint - anything. That's where he is at.",
 		pln_hm1_71_02 = "We know that Russian rat is somewhere Downtown. Search for a clue - remember, Downtown.",
 		pln_hm1_75_03 = "Haha, you guys give a new meaning to going loud.", --hotline miami d1, added a after give
 		pln_hm1_79_05 = "I think the Commissar got this thing from Vlad. Slow Russian junk...",
-		com_hm2_05_04 = "This is the funniest thing I watch since execution video. Now, that funny.", --is (the) funniest
+		com_hm1_04_03 = "Why are you doing this? I'll kill you a hundred different ways!",
+		com_hm2_05_04 = "This is the funniest thing I watch since execution video. Now, that funny.",
 		com_hm2_04_01 = "That's the wrong direction! Or is it? Go East. Always East.",
 		com_hm2_07_02 = "Okay, okay, we talk. You want money? Girls? Cars? Guns?",
-		com_hm2_05_03 = "You look like rats in a maze. No cheese at the end for you. Only assfuck, yeah?", --removed a word and added ", yeah?"
+		com_hm2_05_03 = "You look like rats in a maze. No cheese at the end for you. Only assfuck, yeah?",
 		com_hm2_05_02 = "How much you being paid? I have counteroffer. Fuck all! Hahahaha!",
-		com_hm2_03_06 = "Hahahaha! Stay like this. Gonna take a screenshot over the camera!", --removed extra h in haha's
+		com_hm2_03_06 = "Hahahaha! Stay like this. Gonna take a screenshot over the camera!",
 		com_hm2_07_01 = "So, joke over, right? This just big joke? Don't do this!",
 		com_hm2_02_03 = "Do you see me? No! Do I see you? Yes!"
 	})
