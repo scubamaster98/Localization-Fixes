@@ -73,12 +73,15 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_ko1_18_03 = "Uh, hold on... no flight plans submitted. Who are these guys?",
 		pln_hm1_27_01 = "Gang, there's gotta be something there that can pinpoint the Commissar's location. Keep looking.", --something there, not in the motelrooms
 		pln_hm1_36_01 = "Is it working? Nice. But damn, that hatch is strong.",
+		pln_hm1_45_03 = "Yeah! That's the sweet sound of success. Get yourself in the basement and check what's in there.",
 		pln_hm1_50_02 = "Those stacked crates are due to be shipped out. Check the labels. Get the right one to the code reader, and that should lead us straight to the Commissar.",
 		pln_hm1_50_03 = "You see all those crates? They're about to get shipped out. Grab the labels and check them at the reader over there. That should give us the Commissar's precise location.",
+		pln_hm1_52_03 = "Excellent job! We know where he is. Now hustle back to the car. Grab any loot before the Feds get it. You know... Those crates gave me an idea...", --fix later
 		pln_hm1_71_01 = "Remember: you're looking for a clue about Downtown Washington. A file, hint - anything. That's where he is at.",
-		pln_hm1_71_02 = "We know that Russian rat is somewhere Downtown. Search for a clue - remember, Downtown.",
+		pln_hm1_71_02 = "We know that the Russian rat is somewhere Downtown. Search for a clue - remember, Downtown.", --fix later
 		pln_hm1_75_03 = "Haha, you guys give a new meaning to going loud.",
 		pln_hm1_79_05 = "I think the Commissar got this thing from Vlad. Slow Russian junk...",
+		pln_hm2_18_02 = "Our inside man provided you a handful of explosives. Grab it and knock on that door.", --fix later
 		com_hm1_04_03 = "Why are you doing this? I'll kill you a hundred different ways!",
 		com_hm2_02_03 = "Do you see me? No! Do I see you? Yes!",
 		com_hm2_03_06 = "Hahahaha! Stay like this. Gonna take a screenshot over the camera!",
