@@ -44,6 +44,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		dr1_a67_any_04 = " ",
 		dr1_a03a_any_04 = "I'm coming... Three... Yeah, three minutes away!",
 		plt_a06a_any_03 = "I'm there in one minute.", --mallcrasher bile line, although not sure if i should spell it as 1 minute or one
+		pln_cs1_81_01 = "Watch your head, guys. Ass bombs aren't the only thing dropping in here.",
 		pln_at1_gen_09_01 = "Woah, some of the loot got caught in that explosion. Lucky for us, there is more in there.", --fix later
 		pln_at1_gen_09_03 = "Woah, we lost some loot in that explosion! Well, no time to waste! Look through the rest of the deposit boxes.",
 		pln_at1_gen_19_01 = "You're through the first truck. Now start cracking the boxes and bagging the loot. Five bags, so move it, guys!", --fix later
@@ -79,9 +80,11 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_hm1_52_03 = "Excellent job! We know where he is. Now hustle back to the car. Grab any loot before the Feds get it. You know... Those crates gave me an idea...", --fix later
 		pln_hm1_71_01 = "Remember: you're looking for a clue about Downtown Washington. A file, hint - anything. That's where he is at.",
 		pln_hm1_71_02 = "We know that the Russian rat is somewhere Downtown. Search for a clue - remember, Downtown.", --fix later
+		pln_hm1_77_02 = "Now head to the hatch and hook it to the cable.", --fix
 		pln_hm1_75_03 = "Haha, you guys give a new meaning to going loud.",
 		pln_hm1_79_05 = "I think the Commissar got this thing from Vlad. Slow Russian junk...",
 		pln_hm2_18_02 = "Our inside man provided you a handful of explosives. Grab it and knock on that door.", --fix later
+		pln_hm2_20_13 = "They're dumping that coke like they mean it! Get up there and stop them!", --fix later
 		com_hm1_04_03 = "Why are you doing this? I'll kill you a hundred different ways!",
 		com_hm2_02_03 = "Do you see me? No! Do I see you? Yes!",
 		com_hm2_03_06 = "Hahahaha! Stay like this. Gonna take a screenshot over the camera!",
