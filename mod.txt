@@ -3,7 +3,8 @@
     "description": "Fixes errors and changes some localization in u37.1",
 	"author" : "s",
 	"color" : "1 0 1",
-    "version": "1.7",
+	"contact" : "https://github.com/scubamaster98/Localization-Fixes",
+    "version": "1.8",
 		"hooks": [
 		{ "hook_id": "lib/managers/localizationmanager", "script_path": "localizationmanager.lua" }
 	]

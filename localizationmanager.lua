@@ -2,7 +2,11 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 	LocalizationManager:add_localized_strings({
 		menu_inspire_desc = "BASIC: ##$basic;##\nYou revive crew members ##50%## faster. Shouting at your teammates will increase their movement speed by ##20%## for ##10## seconds.\n\nACE: ##$pro;##\nThere is a ##75%## chance that you can revive crew members at a distance by shouting at them.", --i might remove this later on
 		menu_chat_peer_kicked = "$name; has been kicked.",
+		menu_chat_peer_lost = "$name; has been lost.",
+		menu_chat_peer_failed = "$name; failed authentication." --encountered this unlocalized string after someone in my lobby didnt have ds mod installed, hopefully unrelated
 		menu_asset_safe_escape = "Expert Driver",
+		dialog_authentication_fail = "Authentication failed." --encountered this unlocalized string after someone in my lobby didnt have ds mod installed, hopefully unrelated
+		hct_firestarter_debrief_03 = "The FBI and the Mendozas are now scrambling. They are weakened but not dead. We need to see to that later. We will be in touch.",
 		hud_carry_weapon = "Weapons", --its multiple weapons
 		hud_int_set_off_alarm = "Hold $BTN_INTERACT; to set off the alarm", --shadow raid trucks
 		hud_int_open_slash_close = "Hold $BTN_INTERACT; to open/close", --not sure yet, only saw it in one heist
@@ -45,6 +49,8 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		dr1_a03a_any_04 = "I'm coming... Three... Yeah, three minutes away!",
 		plt_a06a_any_03 = "I'm there in one minute.", --mallcrasher bile line, although not sure if i should spell it as 1 minute or one
 		pln_cs1_81_01 = "Watch your head, guys. Ass bombs aren't the only thing dropping in here.",
+		pln_ff3_17_any_01 = "Ah, that is the vault guys. That door, we can't get through it this time. But the gold... The gold is on the other side! Well, we got to leave it.",
+		pln_ff3_07_any_06 = "Oh, my! Seems like the good senator did the deal and partied at the same time - looks like an arms-gold-coke deal.",
 		pln_at1_gen_09_01 = "Woah, some of the loot got caught in that explosion. Lucky for us, there is more in there.", --fix later
 		pln_at1_gen_09_03 = "Woah, we lost some loot in that explosion! Well, no time to waste! Look through the rest of the deposit boxes.",
 		pln_at1_gen_19_01 = "You're through the first truck. Now start cracking the boxes and bagging the loot. Five bags, so move it, guys!", --fix later
@@ -61,6 +67,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_watchdogs_new_stage2_01_any_01 = "Let's get the bags secured ASAP. There's a boat on the way to pick 'em up.",
 		pln_election_stage3_04_any_01 = "The data scrambler just crashed. Get to the server and get it running again.",
 		pln_framing_stage3_23_any_01 = "There you go. Now let's frame this guy, get up to the roof, and our guy will throw you the coke.",
+		pln_framing_stage3_50_any_01 = "Pretty soon we're going to be swarmed with news choppers. Our escape chopper? Blend right in.", --fix later
 		pln_rats_stage1_26_any_02 = "Ah, what!? Guys, you have to be careful with that stuff, I told you!",
 		pln_rats_stage2_08_any_01b = "Watch out though. If you get caught, they will likely try to destroy the intel.", --fix later
 		pln_rt1_12_any_01 = "Good, OK, the reaction seems fine, keep going.", --rats d1
@@ -80,7 +87,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_hm1_52_03 = "Excellent job! We know where he is. Now hustle back to the car. Grab any loot before the Feds get it. You know... Those crates gave me an idea...", --fix later
 		pln_hm1_71_01 = "Remember: you're looking for a clue about Downtown Washington. A file, hint - anything. That's where he is at.",
 		pln_hm1_71_02 = "We know that the Russian rat is somewhere Downtown. Search for a clue - remember, Downtown.", --fix later
-		pln_hm1_77_02 = "Now head to the hatch and hook it to the cable.", --fix
+		pln_hm1_77_02 = "Now head to the hatch and hook it to the cable.", --fix later
 		pln_hm1_75_03 = "Haha, you guys give a new meaning to going loud.",
 		pln_hm1_79_05 = "I think the Commissar got this thing from Vlad. Slow Russian junk...",
 		pln_hm2_18_02 = "Our inside man provided you a handful of explosives. Grab it and knock on that door.", --fix later
