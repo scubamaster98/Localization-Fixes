@@ -3,9 +3,9 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		menu_inspire_desc = "BASIC: ##$basic;##\nYou revive crew members ##50%## faster. Shouting at your teammates will increase their movement speed by ##20%## for ##10## seconds.\n\nACE: ##$pro;##\nThere is a ##75%## chance that you can revive crew members at a distance by shouting at them.", --i might remove this later on
 		menu_chat_peer_kicked = "$name; has been kicked.",
 		menu_chat_peer_lost = "$name; has been lost.", --pdth style
-		menu_chat_peer_failed = "$name; failed authentication.", --encountered this unlocalized string after someone in my lobby didnt have ds mod installed, hopefully unrelated
+		menu_chat_peer_failed = "$name; failed authentication.", --unlocalized string in vanilla
 		menu_asset_safe_escape = "Expert Driver",
-		dialog_authentication_fail = "Authentication failed.", --encountered this unlocalized string after someone in my lobby didnt have ds mod installed, hopefully unrelated
+		dialog_authentication_fail = "Steam could not authenticate your Steam ID.", --unlocalized string in vanilla
 		hct_firestarter_debrief_03 = "The FBI and the Mendozas are now scrambling. They are weakened but not dead. We need to see to that later. We will be in touch.",
 		hud_carry_weapon = "Weapons", --its multiple weapons
 		hud_int_set_off_alarm = "Hold $BTN_INTERACT; to set off the alarm",
