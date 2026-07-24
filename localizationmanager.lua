@@ -8,9 +8,16 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		dialog_authentication_fail = "Steam could not authenticate your Steam ID.", --unlocalized string in vanilla
 		hct_firestarter_debrief_03 = "The FBI and the Mendozas are now scrambling. They are weakened but not dead. We need to see to that later. We will be in touch.",
 		hud_carry_weapon = "Weapons", --its multiple weapons
+		hud_carry_lance_bag = "Thermal Drill",
+		hud_equipment_lance = "Thermal Drill",
 		hud_int_set_off_alarm = "Hold $BTN_INTERACT; to set off the alarm",
 		hud_int_open_slash_close = "Hold $BTN_INTERACT; to open/close", --not sure, only saw it in one heist
 		hud_int_equipment_barcode_downtown = "Barcode: Downtown", --consistency, the board doesnt have washington at the end
+		hud_action_try_keys_no_key = "Requires keychain to unlock",
+		hud_v_mallcrasher_mission2_hl = "Destroy $50,000 worth of stuff",
+		hud_v_four_stores_mission2 = "Steal $15,000 worth of valuables",
+		hud_v_four_stores_mission2_hl = "Steal $15,000",
+		hud_arm_forest1_hl = "Find and break into the correct railcar",
 		heist_contact_the_elephant_description = "John Henry Simmons, called the Elephant by press. A dirty Republican Congressman with mysterious connections that go all the way to the top.",
 		heist_safehouse_hl = "Safe House", --consistency, originally had safe house spelled in many different ways
 		heist_safehouse = "Safe House",
