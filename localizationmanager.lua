@@ -4,7 +4,9 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		menu_chat_peer_kicked = "$name; has been kicked.",
 		menu_chat_peer_lost = "$name; has been lost.", --pdth style
 		menu_chat_peer_failed = "$name; failed authentication.", --unlocalized string in vanilla
+		menu_network_help = "Adjust network settings.",
 		menu_asset_safe_escape = "Expert Driver",
+		st_menu_prerequisite_following_skill = "Requires following skill to be unlocked:",
 		dialog_authentication_fail = "Steam could not authenticate your Steam ID.", --unlocalized string in vanilla
 		hct_firestarter_debrief_03 = "The FBI and the Mendozas are now scrambling. They are weakened but not dead. We need to see to that later. We will be in touch.",
 		hud_carry_weapon = "Weapons", --its multiple weapons
@@ -19,6 +21,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		hud_v_four_stores_mission2 = "Steal $15,000 worth of valuables",
 		hud_v_four_stores_mission2_hl = "Steal $15,000",
 		hud_arm_forest1_hl = "Find and break into the correct railcar",
+		heist_firestarter_3_briefing = "This is the place, people... This bank here holds all the Mendoza capital north of the border. Little old grandmothers walk right by their blood money every day. Hidden in plain sight, Hector says. At least $100m in black cash. What you're gonna do is go in, control the crowd, get into the vault without the alarms going off. Then set a fire, and film yourself doing it. Hector wants it that way.",
 		heist_contact_the_elephant_description = "John Henry Simmons, called the Elephant by press. A dirty Republican Congressman with mysterious connections that go all the way to the top.",
 		heist_safehouse_hl = "Safe House", --consistency, originally had safe house spelled in many different ways
 		heist_safehouse = "Safe House",
@@ -57,6 +60,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		dr1_a67_any_04 = " ",
 		dr1_a03a_any_04 = "I'm coming... Three... Yeah, three minutes away!",
 		plt_a06a_any_03 = "I'm there in one minute.",
+		pln_ed1_16_02 = "One of these trucks is carrying the voting machines to Washington. When you think you know which one it is, get the tracker on it and we can move on.",
 		pln_cs1_01_01 = "There'll be a couple of keycards out there, maybe the trunk of the cars. They'll help you get silent access to the vault. Or you can forget that Mission Impossible crap and unleash Ragnarok. Up to you.",
 		pt2_cs1_03_02 = "Roof, alright I got it. (Singing)", --he sings "I'm a Wild One" here, i should find the full line
 		pt2_cs1_07_01 = "One minute. Eyes on the skies gentlemen.", --unsure if he says sky or skies
@@ -85,9 +89,9 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_watchdogs_new_stage1_18_any_03 = "Escape driver's coming in now. The escape driver is coming in now!",
 		pln_watchdogs_new_stage2_01_any_01 = "Let's get the bags secured ASAP. There's a boat on the way to pick 'em up.",
 		pln_election_stage3_04_any_01 = "The data scrambler just crashed. Get to the server and get it running again.",
-		pln_framing_stage2_05_any_02 = "OK, now let's hope they call you fast.", --not sure
+		pln_framing_stage2_05_any_02 = "OK, now let's hope they call you fast.",
 		pln_framing_stage3_23_any_01 = "There you go. Now let's frame this guy, get up to the roof, and our guy will throw you the coke.",
-		pln_framing_stage3_50_any_01 = "Pretty soon we're going to be swarmed with news choppers. Our escape chopper? Blend right in.", --not sure
+		pln_framing_stage3_50_any_01 = "Pretty soon we're going to be swarmed with news choppers. Our escape chopper? Blend right in.",
 		pln_rats_stage1_26_any_02 = "Ah, what!? Guys, you have to be careful with that stuff, I told you!",
 		pln_rats_stage2_08_any_01b = "Watch out though. If you get caught, they will likely try to destroy the intel.",
 		pln_rt1_03_any_02 = "We got company! The Mendozas' are probably here.",
@@ -102,20 +106,26 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_ff3_07_any_05 = "Alright, I found a video of him doing the deal... It is insane. He sure is a show-off.",
 		pln_ff3_07_any_09 = "I'll pack this info into files and get ready to stream it up to the press.",
 		pln_fs1_03_any_01 = "This is the correct hangar, bag those guns and get ready to bring them back up to the van.",
-		pln_ko1_01_01 = "There it is. Do your thing, guys, but Gage prefers you to do it quietly. Front gate is dead ahead, but maybe you can find alternative routes.", --not sure
+		pln_ko1_01_01 = "There it is. Do your thing, guys, but Gage prefers you to do it quietly. Front gate is dead ahead, but maybe you can find alternative routes.",
 		pln_ko1_06_02 = "Gold bullion. Probably taken from the enemies of freedom.",
 		pln_ko1_18_03 = "Uh, hold on... no flight plans submitted. Who are these guys?",
 		pln_hm1_27_01 = "Gang, there's gotta be something there that can pinpoint the Commissar's location. Keep looking.",
+		pln_hm1_34_01 = "Connect that cable to hatch and the pick-up. Then start the engine. 400 horsepowers and one industrial cable should be enough to tear that hatch right off.", --unsure
 		pln_hm1_36_01 = "Is it working? Nice. But damn, that hatch is strong.",
 		pln_hm1_45_03 = "Yeah! That's the sweet sound of success. Get yourself in the basement and check what's in there.",
+		pln_hm1_47_01 = "We know he is in the West End somewhere. Look around for anything related to it. Files, maps. Remember: West End.",
+		pln_hm1_47_02 = "The trace indicates West End. Look for clues for that - West End.", --unsure
 		pln_hm1_50_02 = "Those stacked crates are due to be shipped out. Check the labels. Get the right one to the code reader, and that should lead us straight to the Commissar.",
 		pln_hm1_50_03 = "You see all those crates? They're about to get shipped out. Grab the labels and check them at the reader over there. That should give us the Commissar's precise location.",
 		pln_hm1_52_03 = "Excellent job! We know where he is. Now hustle back to the car. Grab any loot before the Feds get it. You know... Those crates gave me an idea...",
+		pln_hm1_67_02 = "Mobster down. That should get the Commissar's attention.",
 		pln_hm1_71_01 = "Remember: you're looking for a clue about Downtown Washington. A file, hint - anything. That's where he is at.",
 		pln_hm1_71_02 = "We know that the Russian rat is somewhere Downtown. Search for a clue - remember, Downtown.",
 		pln_hm1_77_02 = "Now head to the hatch and hook it to the cable.",
 		pln_hm1_75_03 = "Haha, you guys give a new meaning to going loud.",
 		pln_hm1_79_05 = "I think the Commissar got this thing from Vlad. Slow Russian junk...",
+		pln_hm2_06_02 = "Go, guys. Don't lose the scent!",
+		pln_hm2_11_03 = "The drill is there. Get it started on that vault.", --unsure
 		pln_hm2_18_02 = "Our inside man provided you a handful of explosives. Grab it and knock on that door.",
 		pln_hm2_20_13 = "They're dumping that coke like they mean it! Get up there and stop them!",
 		com_hm1_04_03 = "Why are you doing this? I'll kill you a hundred different ways!",
@@ -126,6 +136,8 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		com_hm2_05_03 = "You look like rats in a maze. No cheese at the end for you. Only assfuck, yeah?",
 		com_hm2_05_04 = "This is the funniest thing I watch since execution video. Now, that funny.",
 		com_hm2_07_01 = "So, joke over, right? This just big joke? Don't do this!",
-		com_hm2_07_02 = "Okay, okay, we talk. You want money? Girls? Cars? Guns?"
+		com_hm2_07_02 = "Okay, okay, we talk. You want money? Girls? Cars? Guns?",
+		com_hm2_08_01 = "You'll never get me! You clowns are DONE!",
+		com_hm2_08_05 = "Hahahaha, the Commissar outsmarts you again, assholes."
 	})
 end)
