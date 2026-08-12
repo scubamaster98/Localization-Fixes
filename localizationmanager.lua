@@ -1,6 +1,6 @@
 Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 	LocalizationManager:add_localized_strings({
-		menu_inspire_desc = "BASIC: ##$basic;##\nYou revive crew members ##50%## faster. Shouting at your teammates will increase their movement speed by ##20%## for ##10## seconds.\n\nACE: ##$pro;##\nThere is a ##75%## chance that you can revive crew members at a distance by shouting at them.", --i might remove this later on
+		--menu_inspire_desc = "BASIC: ##$basic;##\nYou revive crew members ##50%## faster. Shouting at your teammates will increase their movement speed by ##20%## for ##10## seconds.\n\nACE: ##$pro;##\nThere is a ##75%## chance that you can revive crew members at a distance by shouting at them.", --i might remove this later on, . at the end
 		menu_chat_peer_kicked = "$name; has been kicked.",
 		menu_chat_peer_lost = "$name; has been lost.", --pdth style
 		menu_chat_peer_failed = "$name; failed authentication.", --unlocalized string in vanilla
@@ -16,7 +16,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		hud_int_open_slash_close = "Hold $BTN_INTERACT; to open/close", --not sure, only saw it in one heist
 		hud_int_equipment_barcode_downtown = "Barcode: Downtown", --consistency, the board doesnt have washington at the end
 		hud_action_try_keys_no_key = "Requires keychain to unlock",
-		--hud_e_welcome_jungle_stage2_mission1_hl = "Find the server room", might change "Get into the server room" to this since u dont know where the server room actually is
+		hud_e_welcome_jungle_stage2_mission1_hl = "Find the server room",
 		hud_v_mallcrasher_mission2_hl = "Destroy $50,000 worth of stuff",
 		hud_v_four_stores_mission2 = "Steal $15,000 worth of valuables",
 		hud_v_four_stores_mission2_hl = "Steal $15,000",
@@ -31,8 +31,8 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		heist_safehouse_briefing = "The Safe House is your home away from home, your fortress, your place of contemplation, the place where your money takes shape and form. The Safe House gives you a place to sharpen your skills in a low-pressure environment. You'll be able to test out various weapons, mechanics like cracking safes and disarming cameras, admire the fat stacks of cash in your vault, and even purchase assets to make the place the envy of every crook from here to the White House.",
 		heist_safehouse_briefing_2 = "Welcome back to The Safe House.",
 		heist_contact_interupt = "Car Chase",
-		bm_wp_r870_s_solid = "Standard Stock (r870)", --locomotive has both of these sharing the same name, i want to figure out something i could add to one of them without renaming the weapon mod entirely
-		bm_wp_m4_s_standard = "Standard Stock (m4)",
+		bm_wp_r870_s_solid = "Police Stock", --previously named Standard Stock (r870), chose this name as theres another stock called "Police Shorty Stock" which has the same back part and a "Tactical Shorty Stock" which lacks it
+		--bm_wp_m4_s_standard = "Standard Stock (m4)",--locomotive has both of these sharing the same name, i want to figure out something i could add to one of them without renaming the weapon mod entirely
 		bm_wp_m4_m_straight = "Vintage Mag", --consistency, original had "Mag." on all of these
 		bm_wp_mp7_m_extended = "Extended Mag",
 		bm_wp_mp9_m_extended = "Extended Mag",
@@ -54,12 +54,16 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		bm_wp_mp9_m_short = "Short Mag",
 		bm_wp_saiga_m_20rnd = "Extended Mag",
 		--subtitles start here
-		dr1_a67_any_01 = " ",
+		dr1_a67_any_01 = " ", --maybe add something like (Screaming) here?
 		dr1_a67_any_02 = " ",
 		dr1_a67_any_03 = " ",
 		dr1_a67_any_04 = " ",
 		dr1_a03a_any_04 = "I'm coming... Three... Yeah, three minutes away!",
 		plt_a06a_any_03 = "I'm there in one minute.",
+		pln_sh_int_07_01 = "First of all, beside that starter kit, another package is awaiting for you in the back alley.",
+		pln_sh_int_22_01 = "Alright, now, this is your safe house, this is where you spend your time off duty. It's not much at the moment, but give it some time. I'm working on it. And I'll let you do some decorating yourself soon.",
+		pln_sh_int_28_01 = "OK, to your left is your Crime.net station. This is where you get your contracts. To your right is your security cameras. Look around and I'll tell you more.",
+		pln_sh_int_73_02 = "Go hit up Crime.net when you're ready.",
 		pln_ed1_16_02 = "One of these trucks is carrying the voting machines to Washington. When you think you know which one it is, get the tracker on it and we can move on.",
 		pln_cs1_01_01 = "There'll be a couple of keycards out there, maybe the trunk of the cars. They'll help you get silent access to the vault. Or you can forget that Mission Impossible crap and unleash Ragnarok. Up to you.",
 		pt2_cs1_03_02 = "Roof, alright I got it. (Singing)", --he sings "I'm a Wild One" here, i should find the full line
@@ -77,6 +81,9 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		bigbank_gensec_part3_03 = "Yeah, everything's fine. Just a scheduling conflict. Had a major account holder turn up out of the blue.",
 		pln_bigoil_stage2_intro_a_01 = "Everyone's here, good. The villa's on the other side of the airstrip. Sneak in there, find the lab. when you've found the engine, hustle it back to this airfield and wait for pick-up.",
 		pln_jewelrystore_stage1_cnc_03 = "Juicy score in the diamond district, people. Ice for everyone.",
+		pln_ukranian_stage1_27_any_02 = "Hang tight, we're looking for another escape point.",
+		pln_ukranian_stage1_end_b_02 = "Nice run team. The tiara is secured and Vlad can't contain himself with joy. Let's go see that crazy Ruskie.",
+		pln_mallcrash_stage1_09_any_02 = "Two-Five-Zero-Zero-Zero, half way, keep moving!",
 		pln_branchbank_stage1_04_any_01 = "It's a straight cash hit. You know how it goes.",
 		pln_branchbank_stage1_12_any_02 = "Well this looks like a gold mine now, doesn't it.",
 		pln_nightclub_stage1_08_any_01 = "OK, you found it. Now drill that safe, it's probably full of cash.",
@@ -88,6 +95,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_watchdogs_new_stage1_10_any_02 = "OK people, the pick-up driver is here! He's on the street behind you!",
 		pln_watchdogs_new_stage1_18_any_03 = "Escape driver's coming in now. The escape driver is coming in now!",
 		pln_watchdogs_new_stage2_01_any_01 = "Let's get the bags secured ASAP. There's a boat on the way to pick 'em up.",
+		pln_watchdogs_new_stage2_10_any_03 = "The escape helicopter is here folks. If you're feeling greedy, you can go and get the rest of the bags - otherwise, time to run!",
 		pln_election_stage3_04_any_01 = "The data scrambler just crashed. Get to the server and get it running again.",
 		pln_framing_stage2_05_any_02 = "OK, now let's hope they call you fast.",
 		pln_framing_stage3_23_any_01 = "There you go. Now let's frame this guy, get up to the roof, and our guy will throw you the coke.",
@@ -102,6 +110,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_rt1_22_any_07 = "Try caustic soda... Or hydrogen... No no, wait, soda... Go for that. Yeah.",
 		pln_esc_01_to_arrival_van = "The van is right around the corner. It'll be there in one minute.",
 		pln_esc_02_to_arrival = "Two minutes until you can get the hell out of there.",
+		pln_bb1_43_01 = "Perfect. Now blow the wall and let's get the hell out of here.",
 		pln_bb1_48_02 = "Who said the busses in this town can't keep to a schedule! Get moving that loot.",
 		pln_ff3_07_any_05 = "Alright, I found a video of him doing the deal... It is insane. He sure is a show-off.",
 		pln_ff3_07_any_09 = "I'll pack this info into files and get ready to stream it up to the press.",
