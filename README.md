@@ -19,7 +19,7 @@ This mod is still being worked on, so there may still be inaccurate subtitles li
 
 ## Examples
 
-• Watchdogs driver death subtitles (ERROR: dr1_a67_any_0#) -> "(Screaming)"
+• Watchdogs driver death subtitles (ERROR: dr1_a67_any_0#) -> " "
 
 • Bunch of "Mag" weapon mods such as "Vintage Mag.", "Extended Mag." changed to not have a "." at the end.
 
