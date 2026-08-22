@@ -1,30 +1,38 @@
 # About
 
-Fixes various problems with the Localization and improving on it in PAYDAY 2. This mod is primarily made and updated for Update 37.1, but it should work on every single version.
-This mod is still being worked on, so there may still be inaccurate subtitles lingering around.
+Fixes various problems with the localization and improving on it in PAYDAY 2. This mod is primarily made and updated for Update 37.1, but it should work on every single version.
+This mod is still being worked on, so there may still be inaccurate strings lingering around.
 
-## Notable changes
+## What does this mod do?
 
-• Localization to previously unlocalized strings
+This mod does the following things with the localization:
 
-• Subtitles being accurate to the lines
+• Adds localization to previously unlocalized strings
 
-• Tons of consistency fixes
+• Makes subtitles accurate to the lines
 
-• Improved, more accurate wording
+• Fixes tons of inconsistencies
+
+• Improves wording
 
 • Typo fixes
 
-• Actually correct spelling
+• Correct spelling
 
-## Examples
+Yes, this does mean that i *may* replace certain strings even if they're technically correct.
 
-• Watchdogs driver death subtitles (ERROR: dr1_a67_any_0#) -> " "
+## Notable chnges
 
-• Bunch of "Mag" weapon mods such as "Vintage Mag.", "Extended Mag." changed to not have a "." at the end.
+• Watchdogs driver death subtitles: (ERROR: dr1_a67_any_0#) -> " "
 
-• Weapon bag type "Weapon" -> "Weapons"
+• Bunch of weapon mods: "Vintage Mag.", "Extended Mag." changed to not have a "." at the end.
 
-• Expert Driver asset "Expert Driver ." -> "Expert Driver."
+• Weapon bag type: "Weapon" -> "Weapons"
 
-• Kick message "have been kicked." -> "has been kicked."
+• Expert Driver asset: "Expert Driver ." -> "Expert Driver."
+
+• Kick message: "have been kicked." -> "has been kicked."
+
+## Strings i will likely never touch
+
+I'll avoid changing strings that may be modified by overhaul mods, like skills. Weapon mods are an exception to this, but I'll still try to avoid changing them.
