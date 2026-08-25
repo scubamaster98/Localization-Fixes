@@ -4,7 +4,7 @@
 	"author" : "s",
 	"color" : "1 0 1",
 	"contact" : "https://github.com/scubamaster98/Localization-Fixes",
-    "version": "1.12",
+    "version": "1.13",
 	"updates" : [
 		{
 			"identifier" : "locfixes",
