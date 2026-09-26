@@ -2,6 +2,7 @@
 
 Fixes various problems with the localization and improving on it in PAYDAY 2. This mod is primarily made and updated for Update 37.1, but it should work on every single version.
 This mod is still being worked on, so there may still be inaccurate strings lingering around.
+Currently about 170+ strings have been changed.
 
 ## What does this mod do?
 
@@ -21,7 +22,7 @@ This mod does the following things with the localization:
 
 Yes, this does mean that i *may* replace certain strings even if they're technically correct.
 
-## Notable chnges
+## Notable changes/examples
 
 • Watchdogs driver death subtitles: (ERROR: dr1_a67_any_0#) -> " "
 

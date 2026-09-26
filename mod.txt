@@ -1,10 +1,10 @@
 {
     "name": "Localization Fixes",
-    "description": "Fixes errors and changes some localization in u37.1",
+    "description": "Fixes errors and changes some localization.",
 	"author" : "s",
 	"color" : "1 0 1",
 	"contact" : "https://github.com/scubamaster98/Localization-Fixes",
-    "version": "1.13",
+    "version": "1.14",
 	"updates" : [
 		{
 			"identifier" : "locfixes",

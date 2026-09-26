@@ -75,14 +75,17 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_cs1_01_01 = "There'll be a couple of keycards out there, maybe the trunk of the cars. They'll help you get silent access to the vault. Or you can forget that Mission Impossible crap and unleash Ragnarok. Up to you.",
 		pln_cs1_02_03 = "That's one keycard, we need two - keep looking.",
 		pln_cs1_03_02 = "Alright, that's both keycards. Let's open that vault up.",
-		pt2_cs1_03_02 = "Roof, alright I got it. (Singing)", --he sings "I'm a Wild One" here, i should find the full line
-		pt2_cs1_07_01 = "One minute. Eyes on the skies gentlemen.", --unsure if he says sky or skies
+		pln_cs1_07_03 = "That's the cash. Remember, unless you want the cops there, get a bag over the yellow wall. Don't worry - the blackmailing asswipe will get what's coming to him.",
 		pln_cs1_11_03 = "That's it! Now let's get it to work on that vault.",
 		pln_cs1_60_02 = "Answer the phone!",
 		pln_cs1_74_02 = "The chopper is deploying to the roof. Be careful!",
 		pln_cs1_79_01 = "This goddamn place is a maze.",
 		pln_cs1_81_01 = "Watch your head, guys. Ass bombs aren't the only thing dropping in here.",
 		pln_cs1_96_01 = "Units converging on your position from all directions. Cops, SWAT, Feds and - hell! Even the National Guard are on their way. We need to find another way out.",
+		pln_cs1_116_01 = "You got one minute til that Captain raises the alarm!",
+		pt2_cs1_03_02 = "Roof, alright I got it. (Singing)", --he sings "I'm a Wild One" here, i should find the full line
+		pt2_cs1_07_01 = "One minute. Eyes on the skies gentlemen.", --unsure if he says sky or skies
+		blm_cs1_01_03 = "You don't know me, but I see what you're up to, and I want in. Throw some money over the yellow wall by Jimbo's. And none of you guys better try and cross the road, uh-uh, or I'll call the cops. Ya hear me?",
 
 		pln_jewelrystore_stage1_cnc_03 = "Juicy score in the diamond district, people. Ice for everyone.",
 
@@ -151,6 +154,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_bigoil_stage2_18_any_01 = "Thanks, I'll have my man here inspect it and if it's the right one we're good to go. So hang tight for a second.",
 
 		pln_ed1_16_02 = "One of these trucks is carrying the voting machines to Washington. When you think you know which one it is, get the tracker on it and we can move on.",
+		pln_ed3_05_03 = "I got those scramblers from Vlad. (mimicking Vlad) That lying son of a bitch.",
 		pln_election_stage2_15_any_01 = "Good, it's burning, now if you haven't, then take what you want from the other trucks, and lets leave.",
 		pln_election_stage3_04_any_01 = "The data scrambler just crashed. Get to the server and get it running again.",
 
