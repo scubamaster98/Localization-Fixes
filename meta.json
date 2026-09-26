@@ -1,7 +1,7 @@
 [
     {
         "ident" : "locfixes",
-        "version" : "1.13",
+        "version" : "1.14",
         "patchnotes_url" : "https://github.com/scubamaster98/Localization-Fixes/commits/main/",
         "download_url" : "https://github.com/scubamaster98/Localization-Fixes/archive/refs/heads/main.zip"
     }
