@@ -1,8 +1,8 @@
 # About
 
-Fixes various problems with the localization and improving on it in PAYDAY 2. This mod is primarily made and updated for Update 37.1, but it should work on every single version.
+Fixes various problems with the English localization and improving on it in PAYDAY 2. This mod is primarily made and updated for Update 37.1, but it should work on every single version.
 This mod is still being worked on, so there may still be inaccurate strings lingering around.
-Currently about 170+ strings have been changed.
+Currently about 180+ strings have been changed.
 
 ## What does this mod do?
 

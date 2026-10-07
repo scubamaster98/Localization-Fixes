@@ -3,21 +3,21 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 	--Menu
 		--menu_inspire_desc = "BASIC: ##$basic;##\nYou revive crew members ##50%## faster. Shouting at your teammates will increase their movement speed by ##20%## for ##10## seconds.\n\nACE: ##$pro;##\nThere is a ##75%## chance that you can revive crew members at a distance by shouting at them.", --i might remove this later on, . at the end
 		menu_chat_peer_kicked = "$name; has been kicked.",
-		menu_chat_peer_lost = "$name; has been lost.", --pdth style
-		menu_chat_peer_failed = "$name; failed authentication.", --unlocalized string
+		menu_chat_peer_lost = "$name; has been lost.", --pdth style as it's more accurate than "disconnected"
+		menu_chat_peer_failed = "$name; failed authentication.", --unlocalized string, added in u28
 		menu_network_help = "Adjust network settings.",
 		menu_asset_safe_escape = "Expert Driver",
 		st_menu_prerequisite_following_skill = "Requires following skill to be unlocked:",
-		dialog_authentication_fail = "Steam could not authenticate your Steam ID.", --unlocalized string
+		dialog_authentication_fail = "Steam could not authenticate your Steam ID.", --unlocalized string, added in u28
 		victory_cash_postponed_bonus = "No money awarded. You need to complete the bonus contract first.",
 		hct_firestarter_debrief_03 = "The FBI and the Mendozas are now scrambling. They are weakened but not dead. We need to see to that later. We will be in touch.",
 		heist_firestarter_3_briefing = "This is the place, people... This bank here holds all the Mendoza capital north of the border. Little old grandmothers walk right by their blood money every day. Hidden in plain sight, Hector says. At least $100m in black cash. What you're gonna do is go in, control the crowd, get into the vault without the alarms going off. Then set a fire, and film yourself doing it. Hector wants it that way.",
 		heist_contact_the_elephant_description = "John Henry Simmons, called the Elephant by press. A dirty Republican Congressman with mysterious connections that go all the way to the top.",
-		heist_safehouse_hl = "Safe House", --consistency, originally had safe house spelled in many different ways
-		heist_safehouse = "Safe House",
 		heist_haunted = "Safe House Nightmare",
 		heist_haunted_hl = "Safe House Nightmare",
-		heist_safehouse_crimenet = "Bain has set you up with a Safe House.",
+		heist_safehouse_hl = "Safe House", --consistency, originally had safe house spelled in many different ways
+		heist_safehouse = "Safe House",
+		heist_safehouse_crimenet = "Bain has set you up with the Safe House.",
 		heist_safehouse_briefing = "The Safe House is your home away from home, your fortress, your place of contemplation, the place where your money takes shape and form. The Safe House gives you a place to sharpen your skills in a low-pressure environment. You'll be able to test out various weapons, mechanics like cracking safes and disarming cameras, admire the fat stacks of cash in your vault, and even purchase assets to make the place the envy of every crook from here to the White House.",
 		heist_safehouse_briefing_2 = "Welcome back to The Safe House.",
 		heist_contact_interupt = "Car Chase",
@@ -27,10 +27,13 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		hud_carry_weapon = "Weapons", --its multiple weapons
 		hud_carry_turret = "Turret Part",
 		hud_carry_lance_bag = "Thermal Drill",
+		hud_carry_huge_bag = "The Beast Part",
 		hud_equipment_lance = "Thermal Drill",
 		hud_int_set_off_alarm = "Hold $BTN_INTERACT; to set off the alarm",
 		hud_int_open_slash_close = "Hold $BTN_INTERACT; to open/close", --not sure, only saw it in one heist
 		hud_int_equipment_barcode_downtown = "Barcode: Downtown", --consistency, the board doesnt have washington at the end
+		hud_action_standing_up = "Getting civilian up", --used for civilians, why tf did overkill name them like this??? (Standing up/Getting down)
+		hud_action_getting_down = "Putting civilian down",
 		hud_action_try_keys_no_key = "Requires keychain to unlock",
 		hud_e_welcome_jungle_stage2_mission1_hl = "Find the server room",
 		hud_v_mallcrasher_mission2_hl = "Destroy $50,000 worth of stuff",
@@ -68,6 +71,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_at1_gen_09_03 = "Woah, we lost some loot in that explosion! Well, no time to waste! Look through the rest of the deposit boxes.",
 		pln_at1_gen_19_01 = "You're through the first truck. Now start cracking the boxes and bagging the loot. Five bags, so move it, guys!",
 
+		pln_branchbank_gold_stage1_intro_a_03 = "OK, You're gonna need a thermal drill for this gig. My guy stashed it around the back of the bank. Get it and get to work on the vault. Keep in mind there's security cameras and lots of civilians.",
 		pln_branchbank_stage1_04_any_01 = "It's a straight cash hit. You know how it goes.",
 		pln_branchbank_stage1_12_any_02 = "Well this looks like a gold mine now, doesn't it?",
 		pln_branchbank_stage1_80_any_01 = "OK people, there's the bank, I don't know what's in there, but I know it's gonna be good...",
@@ -101,6 +105,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_ko1_18_03 = "Uh, hold on... no flight plans submitted. Who are these guys?",
 
 	--Vlad
+		pln_nightclub_stage1_brief_01b = "Oh, and there are probably rival Russian mobsters there. I know, Vlad is not being forthcoming with me either.",
 		pln_nightclub_stage1_08_any_01 = "OK, you found it. Now drill that safe, it's probably full of cash.",
 		pln_nightclub_stage1_09_any_01 = "Guys, you need to get that safe open.",
 		pln_nightclub_stage1_10_any_01 = "Yes, that's paydirt! Now bag that stuff and hang tight.",
@@ -115,7 +120,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_ukranian_stage1_end_b_02 = "Nice run team. The tiara is secured and Vlad can't contain himself with joy. Let's go see that crazy Ruskie.",
 
 	--Hector
-		dr1_a67_any_01 = " ", --maybe add something like (Screaming) here? (used in watchdogs day 1)
+		dr1_a67_any_01 = " ", --maybe add something like (Screaming) here?
 		dr1_a67_any_02 = " ",
 		dr1_a67_any_03 = " ",
 		dr1_a67_any_04 = " ",
@@ -131,6 +136,8 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 
 		pln_fs1_03_any_01 = "This is the correct hangar, bag those guns and get ready to bring them back up to the van.",
 		pln_fs2_06_any_02 = "Smooth - that's the door and the alarm is off. Get in there.",
+		pln_fs3_01_any_01 = "OK, time to burn some money!",
+		pln_firestarter_stage3_intro_a_01b = "Then find the money, torch it, and for god's sake record it with the camera I gave you.",
 		pln_fs3_07_any_02 = "OK, that's enough. Get the recording and let's get out of here.",
 
 		pln_rt1_03_any_02 = "We got company! The Mendozas are probably here.",
@@ -155,7 +162,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 
 		pln_ed1_16_02 = "One of these trucks is carrying the voting machines to Washington. When you think you know which one it is, get the tracker on it and we can move on.",
 		pln_ed3_05_03 = "I got those scramblers from Vlad. (mimicking Vlad) That lying son of a bitch.",
-		pln_election_stage2_15_any_01 = "Good, it's burning, now if you haven't, then take what you want from the other trucks, and lets leave.",
+		pln_election_stage2_15_any_01 = "Good, it's burning, now if you haven't, then take what you want from the other trucks, and let's leave.",
 		pln_election_stage3_04_any_01 = "The data scrambler just crashed. Get to the server and get it running again.",
 
 		pln_ff3_17_any_01 = "Ah, that is the vault guys. That door, we can't get through it this time. But the gold... The gold is on the other side! Well, we got to leave it.",
@@ -166,11 +173,13 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_framing_stage1_11_any_01 = "That's four, we're good to go now. If you want to get the rest of the paintings that's up to you.",
 		pln_framing_stage2_05_any_02 = "OK, now let's hope they call you fast.",
 		pln_framing_stage3_23_any_01 = "There you go. Now let's frame this guy, get up to the roof, and our guy will throw you the coke.",
+		pln_framing_stage3_28_any_01 = "Alright, vault is popped, but watch out for those lasers, they connect directly to the alarm.",
 		pln_framing_stage3_50_any_01 = "Pretty soon we're going to be swarmed with news choppers. Our escape chopper? Blend right in.",
 
 	--The Dentist
 		pln_bb1_32_01 = "Grab those bags and get them into the vault. Might be a good idea to take some spares too.",
 		pln_bb1_33_02 = "This place has a formidable vault. Thankfully, I find just the tool for it. Get that bag to the vault.", --99% sure he does say find in here
+		pln_bb1_38_01 = "Here we go. Door's open! Let's see how rich we are!",
 		pln_bb1_43_01 = "Perfect. Now blow the wall and let's get the hell out of here.",
 		pln_bb1_48_02 = "Who said the buses in this town can't keep to a schedule? Get moving that loot!",
 		bigbank_gensec_part3_03 = "Yeah, everything's fine. Just a scheduling conflict. Had a major account holder turn up out of the blue.",
@@ -193,7 +202,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_hm1_79_05 = "I think the Commissar got this thing from Vlad. Slow Russian junk...",
 		pln_hm2_06_02 = "Go, guys. Don't lose the scent!",
 		pln_hm2_07_02 = "This maniac's lair must be up ahead!",
-		pln_hm2_11_03 = "The drill is there. Get it started on that vault.",
+		pln_hm2_11_03 = "The drill is there. Get it started on that vault!",
 		pln_hm2_18_02 = "Our inside man provided you a handful of explosives. Grab it and knock on that door.",
 		pln_hm2_20_13 = "They're dumping that coke like they mean it! Get up there and stop them!",
 		com_hm1_04_03 = "Why are you doing this? I'll kill you a hundred different ways!",
@@ -208,10 +217,10 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		com_hm2_08_01 = "You'll never get me! You clowns are DONE!",
 		com_hm2_08_05 = "Hahahaha, the Commissar outsmarts you again, assholes!",
 
-		--Misc
+	--Misc
 		dr1_a03a_any_04 = "I'm coming... Three... Yeah, three minutes away!",
 		plt_a06a_any_03 = "I'm there in one minute.",
-		plt_a08b_any_02 = "Let's hurry up!", --hopefully this is the line used in an escape heist
+		plt_a08b_any_02 = "Let's hurry up!",
 		pln_esc_30secs_to_arrival_heli = "The chopper touches down in 30 seconds. Get ready to move!",
 		pln_esc_01_to_arrival_van = "The van is right around the corner. It'll be there in one minute.",
 		pln_esc_02_to_arrival = "Two minutes until you can get the hell out of there."

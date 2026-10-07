@@ -1,10 +1,10 @@
 {
-    "name": "Localization Fixes",
-    "description": "Fixes errors and changes some localization.",
+	"name": "Localization Fixes",
+	"description": "Fixes errors and changes some localization.",
 	"author": "s",
 	"color": "1 0 1",
 	"contact": "https://github.com/scubamaster98/Localization-Fixes",
-    "version": "1.14",
+	"version": "1.15",
 	"updates": [
 		{
 			"identifier" : "locfixes",
