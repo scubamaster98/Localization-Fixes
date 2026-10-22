@@ -19,7 +19,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		heist_safehouse = "Safe House",
 		heist_safehouse_crimenet = "Bain has set you up with the Safe House.",
 		heist_safehouse_briefing = "The Safe House is your home away from home, your fortress, your place of contemplation, the place where your money takes shape and form. The Safe House gives you a place to sharpen your skills in a low-pressure environment. You'll be able to test out various weapons, mechanics like cracking safes and disarming cameras, admire the fat stacks of cash in your vault, and even purchase assets to make the place the envy of every crook from here to the White House.",
-		heist_safehouse_briefing_2 = "Welcome back to The Safe House.",
+		heist_safehouse_briefing_2 = "Welcome back to the Safe House.",
 		heist_contact_interupt = "Car Chase",
 
 	--Hud
@@ -27,8 +27,9 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		hud_carry_weapon = "Weapons", --its multiple weapons
 		hud_carry_turret = "Turret Part",
 		hud_carry_lance_bag = "Thermal Drill",
-		hud_carry_huge_bag = "The Beast Part",
 		hud_equipment_lance = "Thermal Drill",
+		hud_carry_huge_bag = "The Beast Part",
+		hud_carry_cage_bag = "Cage Part",
 		hud_int_set_off_alarm = "Hold $BTN_INTERACT; to set off the alarm",
 		hud_int_open_slash_close = "Hold $BTN_INTERACT; to open/close", --not sure, only saw it in one heist
 		hud_int_equipment_barcode_downtown = "Barcode: Downtown", --consistency, the board doesnt have washington at the end
@@ -45,9 +46,14 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		bm_wp_r870_s_solid = "Police Stock", --previously named Standard Stock (r870), chose this name as theres another stock called "Police Shorty Stock" which has the same back part and a "Tactical Shorty Stock" which lacks it
 		--bm_wp_m4_s_standard = "Standard Stock (m4)",--locomotive has both of these sharing the same name, i want to figure out something i could add to one of them without renaming the weapon mod entirely
 		bm_wp_m4_m_straight = "Vintage Mag", --consistency, original had "Mag." on all of these
+		bm_wp_1911_m_standard = "8rnd Mag",
+		bm_wp_1911_m_extended = "12rnd Mag",
+		bm_wp_m4_uupg_m_std = "Milspec Mag",
+		bm_wp_m4_m_pmag = "Tactical Mag",
+		bm_wp_mac10_m_short = "Short Mag",
+		bm_wp_mp9_m_short = "Short Mag",
 		bm_wp_mp7_m_extended = "Extended Mag",
 		bm_wp_mp9_m_extended = "Extended Mag",
-		bm_wp_1911_m_extended = "12rnd Mag",
 		bm_wp_beretta_m_extended = "Extended Mag",
 		bm_wp_p226_m_extended = "Extended Mag",
 		bm_wp_smg_m45_m_extended = "Extended Mag",
@@ -56,14 +62,9 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		bm_wp_g18c_m_mag_33rnd = "Extended Mag",
 		bm_wp_g18c_m_mag_17rnd = "Standard Mag",
 		bm_wp_shorty_m_extended_short = "Extended Mag",
-		bm_wp_1911_m_standard = "8rnd Mag",
 		bm_wp_deagle_m_extended = "Extended Mag",
-		bm_wp_m4_uupg_m_std = "Milspec Mag",
-		bm_wp_pis_usp_m_extended = "Extended Mag",
-		bm_wp_m4_m_pmag = "Tactical Mag",
-		bm_wp_mac10_m_short = "Short Mag",
-		bm_wp_mp9_m_short = "Short Mag",
 		bm_wp_saiga_m_20rnd = "Extended Mag",
+		bm_wp_pis_usp_m_extended = "Extended Mag",
 
 	--Subtitles
 	--Bain
@@ -156,7 +157,9 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_bo1_05_any_01 = "Yep, that's the inventor's address. Beautiful.",
 		pln_bo2_32_any_01 = "It's done! Open the lab door!",
 		pln_bo2_40_any_02 = "He delivered the engine. I'll have my man here inspect it, and if it's the right one we're good to go. So hang tight for a sec.",
+		pln_bo2_44_any_01 = "Dr. Fantastic! You guys sure are smart! We got the right engine and you are rich! Now make it out of there! Chopper is incoming.",
 		pln_bo2_45_any_01 = "Mr. Dr. Fantastic Sir, you nailed it! That is some science - well done team. Get your big brains out of there! Use the plane.",
+		pln_bo2_50_any_03 = "Roof, roof! Blackhawk on the roof!",
 		pln_bigoil_stage2_intro_a_01 = "Everyone's here, good. The villa's on the other side of the airstrip. Sneak in there, find the lab. When you've found the engine, hustle it back to this airfield and wait for pick-up.",
 		pln_bigoil_stage2_18_any_01 = "Thanks, I'll have my man here inspect it and if it's the right one we're good to go. So hang tight for a second.",
 
