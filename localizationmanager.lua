@@ -2,6 +2,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 	LocalizationManager:add_localized_strings({
 	--Menu
 		--menu_inspire_desc = "BASIC: ##$basic;##\nYou revive crew members ##50%## faster. Shouting at your teammates will increase their movement speed by ##20%## for ##10## seconds.\n\nACE: ##$pro;##\nThere is a ##75%## chance that you can revive crew members at a distance by shouting at them.", --i might remove this later on, . at the end
+		menu_gage_assignment_introduction_desc = "First, thanks for taking on the courier assignment. Not much of a runner myself these days. This is how it works: There are packages scattered across D.C. I hire a lot of people to courier these things, but no one gets to transport a package the whole way. Not very safe to do that. Your job is to pick up any packages you spot and bring them back to me. If you bring enough packages, I'll give you free stuff.\n\nThere are five types of packages, color coded by value: Green Mantis, Yellow Bull, Red Spider, Blue Eagle, and Purple Snake. Green is basic stuff, purple is highly desirable goods. You get the idea.\n\nWhen you spot a package, just approach it and pick it up. You get them at the end of each day. The entire team shares the package count, so there's no need to ninja loot from your teammates. Once you earn enough packages of a specific color, the rewards will be automatically added to your inventory, free of charge. You get one of each mod in the reward package. Check the package pages for details.\n\nAfter completing a package set, feel free to start collecting again: You'll keep earning more rewards as long as you bring home packages. Happy hunting.\n\n- Gage.", --garbage shit
 		menu_chat_peer_kicked = "$name; has been kicked.",
 		menu_chat_peer_lost = "$name; has been lost.", --pdth style as it's more accurate than "disconnected"
 		menu_chat_peer_failed = "$name; failed authentication.", --unlocalized string, added in u28
@@ -9,10 +10,12 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		menu_asset_safe_escape = "Expert Driver",
 		st_menu_prerequisite_following_skill = "Requires following skill to be unlocked:",
 		dialog_authentication_fail = "Steam could not authenticate your Steam ID.", --unlocalized string, added in u28
+		dialog_safehouse_goto_text = "Do you want to go to your Safe House?", --NOTE: found in systemmenu
 		victory_cash_postponed_bonus = "No money awarded. You need to complete the bonus contract first.",
 		hct_firestarter_debrief_03 = "The FBI and the Mendozas are now scrambling. They are weakened but not dead. We need to see to that later. We will be in touch.",
 		heist_firestarter_3_briefing = "This is the place, people... This bank here holds all the Mendoza capital north of the border. Little old grandmothers walk right by their blood money every day. Hidden in plain sight, Hector says. At least $100m in black cash. What you're gonna do is go in, control the crowd, get into the vault without the alarms going off. Then set a fire, and film yourself doing it. Hector wants it that way.",
 		heist_contact_the_elephant_description = "John Henry Simmons, called the Elephant by press. A dirty Republican Congressman with mysterious connections that go all the way to the top.",
+		heist_contact_vlad_description = "A Ukrainian who used to be a feared enforcer in the Russian motherland, Vlad's been running his own extortion and crime racket in D.C out of his local bakery for years.",
 		heist_haunted = "Safe House Nightmare",
 		heist_haunted_hl = "Safe House Nightmare",
 		heist_safehouse_hl = "Safe House", --consistency, originally had safe house spelled in many different ways
@@ -83,7 +86,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_cs1_07_03 = "That's the cash. Remember, unless you want the cops there, get a bag over the yellow wall. Don't worry - the blackmailing asswipe will get what's coming to him.",
 		pln_cs1_11_03 = "That's it! Now let's get it to work on that vault.",
 		pln_cs1_60_02 = "Answer the phone!",
-		pln_cs1_74_02 = "The chopper is deploying to the roof. Be careful!",
+		pln_cs1_74_02 = "The chopper is deploying on the roof. Be careful!",
 		pln_cs1_79_01 = "This goddamn place is a maze.",
 		pln_cs1_81_01 = "Watch your head, guys. Ass bombs aren't the only thing dropping in here.",
 		pln_cs1_96_01 = "Units converging on your position from all directions. Cops, SWAT, Feds and - hell! Even the National Guard are on their way. We need to find another way out.",
@@ -95,8 +98,10 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_jewelrystore_stage1_cnc_03 = "Juicy score in the diamond district, people. Ice for everyone.",
 
 		pln_sh_int_07_01 = "First of all, beside that starter kit, another package is awaiting for you in the back alley.",
-		pln_sh_int_22_01 = "Alright, now, this is your safe house, this is where you spend your time off duty. It's not much at the moment, but give it some time. I'm working on it. And I'll let you do some decorating yourself soon.",
+		pln_sh_int_22_01 = "Alright, now, this is your safe house, this is where you spend your time off duty. It's not much at the moment, but give it some time. I'm working on it. And I'll let you do some decoration yourself soon.",
 		pln_sh_int_28_01 = "OK, to your left is your Crime.net station. This is where you get your contracts. To your right is your security cameras. Look around and I'll tell you more.",
+		pln_sh_int_42_01 = "Cameras. Everybody hates cameras. I set up a room with a couple of variations for you to test your stealth. There's no shame in failure and also no one shooting at you, which is nice.", --technically impossible to hear in vanilla, but i'll fix anyway
+		pln_sh_int_45_01 = "In the field, if you trip an alarm, the cops come buzzing. DC's got lots of them.", --technically impossible to hear in vanilla, but i'll fix anyway
 		pln_sh_int_73_02 = "Go hit up Crime.net when you're ready.",
 
 		pln_ko1_01_01 = "There it is. Do your thing, guys, but Gage prefers you to do it quietly. Front gate is dead ahead, but maybe you can find alternative routes.",
@@ -117,6 +122,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		--some of these are shared with jewelry store i believe
 		pln_ukranian_stage1_27_any_02 = "Hang tight, we're looking for another escape point.",
 		pln_ukranian_stage1_28_any_01 = "Escape car is there. You need to be down the chute soon fellas. Hurry!",
+		pln_ukranian_stage1_48_any_05 = "They're calling in snipers. Too many civilian casualties!",
 		pln_ukranian_stage1_50_any_01 = "All right, that's the tiara we're looking for!",
 		pln_ukranian_stage1_end_b_02 = "Nice run team. The tiara is secured and Vlad can't contain himself with joy. Let's go see that crazy Ruskie.",
 
@@ -154,13 +160,13 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_rats_stage2_08_any_01b = "Watch out though. If you get caught, they will likely try to destroy the intel.",
 
 	--The Elephant
+		pln_bigoil_stage2_intro_a_01 = "Everyone's here, good. The villa's on the other side of the airstrip. Sneak in there, find the lab. When you've found the engine, hustle it back to the airfield and wait for pick-up.",
 		pln_bo1_05_any_01 = "Yep, that's the inventor's address. Beautiful.",
 		pln_bo2_32_any_01 = "It's done! Open the lab door!",
 		pln_bo2_40_any_02 = "He delivered the engine. I'll have my man here inspect it, and if it's the right one we're good to go. So hang tight for a sec.",
 		pln_bo2_44_any_01 = "Dr. Fantastic! You guys sure are smart! We got the right engine and you are rich! Now make it out of there! Chopper is incoming.",
 		pln_bo2_45_any_01 = "Mr. Dr. Fantastic Sir, you nailed it! That is some science - well done team. Get your big brains out of there! Use the plane.",
 		pln_bo2_50_any_03 = "Roof, roof! Blackhawk on the roof!",
-		pln_bigoil_stage2_intro_a_01 = "Everyone's here, good. The villa's on the other side of the airstrip. Sneak in there, find the lab. When you've found the engine, hustle it back to this airfield and wait for pick-up.",
 		pln_bigoil_stage2_18_any_01 = "Thanks, I'll have my man here inspect it and if it's the right one we're good to go. So hang tight for a second.",
 
 		pln_ed1_16_02 = "One of these trucks is carrying the voting machines to Washington. When you think you know which one it is, get the tracker on it and we can move on.",
@@ -175,6 +181,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		pln_ff3_07_any_09 = "I'll pack this info into files and get ready to stream it up to the press.",
 		pln_framing_stage1_11_any_01 = "That's four, we're good to go now. If you want to get the rest of the paintings that's up to you.",
 		pln_framing_stage2_05_any_02 = "OK, now let's hope they call you fast.",
+		pln_framing_stage2_20_any_03 = "Unless you still want the cops to show up you better be careful around those workers.",
 		pln_framing_stage3_23_any_01 = "There you go. Now let's frame this guy, get up to the roof, and our guy will throw you the coke.",
 		pln_framing_stage3_28_any_01 = "Alright, vault is popped, but watch out for those lasers, they connect directly to the alarm.",
 		pln_framing_stage3_50_any_01 = "Pretty soon we're going to be swarmed with news choppers. Our escape chopper? Blend right in.",
@@ -215,6 +222,7 @@ Hooks:Add("LocalizationManagerPostInit", "locfixes", function(loc)
 		com_hm2_05_02 = "How much you being paid? I have counteroffer. Fuck all! Hahahaha!",
 		com_hm2_05_03 = "You look like rats in a maze. No cheese at the end for you. Only assfuck, yeah?",
 		com_hm2_05_04 = "This is the funniest thing I watch since execution video! Now... that funny!",
+		com_hm2_05_05 = "If you put your guns down now, I will be merciful, and will only cut off your fingers and toes.",
 		com_hm2_07_01 = "So, joke over, right? This just big joke? Don't do this!",
 		com_hm2_07_02 = "Okay, okay, we talk. You want money? Girls? Cars? Guns?",
 		com_hm2_08_01 = "You'll never get me! You clowns are DONE!",
